@@ -9,10 +9,8 @@
                     <p class="icon-desc">{{item.desc}}</p>
                 </div>
             </swiper-slide>    
-            
-            
         </swiper>    
-        </div>
+    </div>
 
         
        
@@ -85,12 +83,13 @@
     @import '~styles/mixins.styl';
     .icons>>>swiper-container
     .icons{
-        height : 0;
-        padding-bottm:50%
+        height : 4rem;
+        padding-bottm:50%;
+        margin-top:.1rem;
     }
         .icon{
-            position: relative;
             overflow: hidden;
+            position: relative;
             width: 25%;
             height: 0;
             float: left;
