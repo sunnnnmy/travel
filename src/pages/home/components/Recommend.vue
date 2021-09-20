@@ -2,7 +2,7 @@
     <div class="recommend-title">
         <div> 热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList">
+            <li class="item border-bottom" v-for="item of list">
                 
                 <img class="item-img" :src="item.imgUrl" alt="">
                 
@@ -19,25 +19,8 @@
 <script>
 export default{
         name:"HomeRecommend",
-        data(){
-            return{
-                recommendList:[{
-                    id:"0001",
-                    imgUrl:"https://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_140x140_73fda71d.jpg",
-                    title:"大连圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海洋主题乐园"
-                },{
-                    id:"0002",
-                    imgUrl:"https://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_140x140_73fda71d.jpg",
-                    title:"大连圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海洋主题乐园"
-                },{
-                    id:"0003",
-                    imgUrl:"https://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_140x140_73fda71d.jpg",
-                    title:"大连圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海洋主题乐园"
-                }]
-            }
+        props:{
+            list:Array
         }
 }
 </script>
@@ -46,7 +29,7 @@ export default{
     @import '~styles/mixins.styl';
  .recommend-title{
      line-height: .4rem;
-     
+     /* 文本缩进 */
      text-indent: .2rem;
      margin-top: .2rem;
  }
