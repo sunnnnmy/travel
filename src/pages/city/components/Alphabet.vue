@@ -26,11 +26,11 @@
         right: 0;
         bottom: 0;
         width: .4rem;
-        background: red;
+       
     }
      .item{
          text-align: center;
-         line-height: .44rem;
+         line-height: .4rem;
          color: $bgCOlor;
      }
 </style>
