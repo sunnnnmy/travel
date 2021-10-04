@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> city-components
 </style>
