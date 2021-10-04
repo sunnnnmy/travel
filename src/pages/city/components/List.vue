@@ -19,11 +19,7 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
-            <div class="area" v-for="(item,key ) of cities" :key="key">
-=======
-            <div class="area" v-for="(item,key ) of cities" :key="key" :ref="key">
->>>>>>> city-components
+
                 <div class="title border-topbottom">{{key}}</div>
                 <div class="item-list">
                     <div class="item border-bottom"
@@ -40,13 +36,7 @@
         name:'CityList',
         props:{
             hot:Array,
-<<<<<<< HEAD
-            cities:Object
-=======
-            cities:Object,
-            letter:String
->>>>>>> city-components
-        },
+
         mounted(){
             this.scroll=new Bscroll(this.$refs.wrapper);
         },
