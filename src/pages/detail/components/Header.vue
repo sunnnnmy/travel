@@ -71,17 +71,18 @@
             font-size: .4rem;
         }
     .header-fixed{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: $headerHeight;
-    line-height: $headerHeight;
-    text-align: center;
-    color: #fff;
-    background: $bgColor;
-    color:#fff
-    font-size :.32rem;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: $headerHeight;
+        line-height: $headerHeight;
+        text-align: center;
+        color: #fff;
+        background: $bgColor;
+        color:#fff;
+        font-size :.32rem;
     }
         .header-fixed-back{
             top:0;
